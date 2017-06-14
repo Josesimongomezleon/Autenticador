@@ -1,0 +1,47 @@
+
+<!DOCTYPE html> 
+	<html> 
+		<head> 
+			<meta charset="UTF-8"> 
+			<title>calcular</title> 
+			<link rel="stylesheet"  href="css/main2.css">
+			<link rel="stylesheet"  href="css/animate.css">
+			<link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin-ext' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+			<script language="javascript" src="jquery-1.3.min.js"></script>
+			<script language="javascript">
+				$(document).ready(function() {
+				   
+				    $('#form, #fat, #fo3').submit(function() {
+				        $.ajax({
+				            type: 'POST',
+				            url: $(this).attr('action'),
+				            data: $(this).serialize(),
+				            success: function(data) {
+				                $('#result').html(data);
+
+				            }
+				        })
+				        
+				        return false;
+				    }); 
+				})  
+			</script>
+
+		</head> 
+	<body> 
+
+		<div class="espacio-arriba Lato mediano clouds" align="center">
+
+			<form name="fo3" method="post" action="Suma.php" id="fo3"> 
+				<h3>Numero1:<input type="text" name="N1" required></h3> 
+				
+				<h3>Numero2:<input type="text" name="N2" required></h3> 
+				<br><br> 
+				<input type="submit" name="Calcular" value="Calcular"></input>
+			</form> 
+
+			<div id="result" class="espacio-arriba Lato mediano clouds"></div>
+		</div>
+	</body> 
+</html> 

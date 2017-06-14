@@ -1,0 +1,306 @@
+body{
+	font-family: 'Lato', sans-serif;
+	background-color: #2c3e50;
+}
+img{
+	max-width: 100%;
+}
+.quitar-float{
+	float: none;
+}
+.espacio-arriba{
+	margin-top: 50px;
+}
+.Lobster{
+	font-family: 'Lobster', cursive;
+}
+.grande{
+	font-size: 5em;
+}
+.retraso-1{
+	-webkit-animation-delay: .7s;
+	-moz-animation-delay: .7s;
+	animation-delay: .7s;
+}
+.retraso-2{
+	-webkit-animation-delay: 1.3s;
+	-moz-animation-delay: 1.3s;
+	animation-delay: 1.3s;
+}
+
+.alizarin{
+	color: #e74c3c;
+}
+
+.clouds{
+	color: #ecf0f1;
+}
+.peterriver{
+	color: #3498db;
+}
+.promenate{
+	color: #c0392b;
+}
+
+.blanco{
+	color: #fff;
+}
+.naranja{
+	color: #E86823;
+}
+.rojo{
+	color: #E0052D;
+}
+.marron{
+	color: #8C031C;
+}
+.amarillo{
+	color: #FFCD05;
+}
+.naranjasuave{
+	color: #F7A305;
+}
+
+
+.azulfuerte{
+	color: #333B59;
+}
+.grisaceo{
+	color: #C3C3C3;
+}
+.azulbajo{
+	color: #86BBE7;
+}
+.grisfuerte{
+	color: #595959;
+}
+.azulmedio{
+	color: #3C6EA5;
+}
+
+.esmeralda{
+	color: #2ecc71;
+}
+
+
+.espacio-derecha{
+	margin-right: 1em;
+}
+.espacio-derecha2{
+	margin-right: 20em;
+}
+.espacio-izq{
+	margin-left: -1em;
+}
+.espacio-izq2{
+	margin-left: -16em;
+}
+.espacio-izq3{
+	margin-left: -20em;
+}
+.no-lista{
+	margin: 0px;
+	padding: 0px;
+}
+.no-lista li{
+	list-style-type: none;
+}
+
+.se-gris{
+	background-color: #eee; 
+}
+.se-color{
+	background-color: #C3C3C3;
+}
+.padding-largo{
+	padding: 5px 10px;
+}
+.padding-delgado{
+	padding: 3px 1px;
+}
+.inline-block{
+	float: none;
+	display: inline-block;
+	margin-right: -4px;
+}
+.vete-arriba{
+	vertical-align: top;
+}
+.mediano{
+	font-size: 1.5em;
+}
+.medianomed{
+	font-size: 2em;
+}
+.mediano2{
+	font-size: 4em;
+}
+
+.chico{
+	font-size: 1.2em;
+}
+
+
+table#t01 {
+    width: 100%;
+    background-color: #F1F1F1;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+    background-color: #fff;
+}
+table#t01 th {
+    color: white;
+    background-color: #595959;
+}
+table#t01, td {
+    padding: 5px;
+}
+table#t01 {
+    text-align: center;
+}
+
+input[type="radio"]:checked + label {
+ 
+}
+input[type="chekbox"] {
+    display:none;
+}
+input[type="chekbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url("/rocket/imagenes/check_radio_sheet.png")  left top no-repeat;
+    cursor:pointer;
+}
+input[type="chekbox"]:checked + label span {
+    background:url("/rocket/imagenes/check_radio_sheet.png") -19px top no-repeat;
+}
+
+
+input[type=text] {
+    padding:5px; 
+    border:2px solid #2980b9; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#2980b9;
+}
+
+input[type=submit] {
+    padding:8px 45px; 
+    background:#2980b9; 
+    border:0 none;
+    cursor:pointer;
+    color: #fff;
+    font-size: 2em;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	right: 0; /* Establecemos la barra en la izquierda */
+	margin-right: 50px;
+	top: 100px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+ 
+	.social ul {
+		list-style: none;
+	}
+ 
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 50px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+ 
+	.social ul li .icon-puntaje {
+									background:#16a085;
+									background:#2c3e50; /* Cambiamos el fondo cuando el usuario pase el mouse */
+									padding: 50px 50px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+									background-image: url("/rocket/imagenes/trofeo.png");
+									background-position:top center;	
+									display:block;
+									
+
+								} /* Establecemos los colores de cada red social, aprovechando su class */
+
+	.social ul li .icon-twitter {background: #00abf0;}
+	 
+	.social ul li a:hover {
+		
+	}
+
+table#t01 {
+    width: 100%; 
+    background-color: #f1f1c1;
+}
+
+table#t01 tr:nth-child(even) {
+    background-color: #7f8c8d;
+}
+table#t01 tr:nth-child(odd) {
+    background-color: #34495e;
+}
+table#t01 th {
+    color: white;
+    background-color: black;
+}
+
+.social2 {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	right: 0; /* Establecemos la barra en la izquierda */
+	margin-right: 50px;
+	top: 100px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+ 
+	.social2 ul {
+		list-style: none;
+	}
+ 
+	.social2 ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 50px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+ 
+	.social2 ul li .icon-puntaje2 {
+									background:#16a085;
+									background:#2c3e50; /* Cambiamos el fondo cuando el usuario pase el mouse */
+									padding: 50px 50px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+									background-image: url("/rocket/imagenes/rocket4.png");
+									background-position:top center;	
+									display:block;
+									background-size: 100px;
+									
+
+								} /* Establecemos los colores de cada red social, aprovechando su class */
+
+	.social2 ul li .icon-twitter {background: #00abf0;}
+	 
+	.social2 ul li a:hover {
+		
+	}
+
+
+

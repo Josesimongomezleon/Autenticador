@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- Title Page --> 
+    <title>Login</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="contain.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+  
+</head>
+<body>
+    
+    <br><br><br><br>
+    <NAV class= "raleway medianon gris centrado inline-block sombra">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSistema de autenticación UTM</NAV>
+    <div class="container">
+    <div class="login raleway">
+        <h1>Iniciar Sesión</h1>
+        <form method="post" action="checklogin.php">
+
+            <p><input type="text" name="username" value="" placeholder="Usuario" ><!--<img src= "usuario.png" width= "25" height= "25" align= "left">--></p>
+            <p><input type="password" name="password" value="" placeholder="Contraseña"><!--<img src= "contraseña.png" width= "15" height= "20" align= "left">--></p>
+            <p class="remember_me">
+                <label>
+                    <label>
+                        <input type="checkbox" name="remember_me" id="remember_me" value= "Recordarme en este equipo">
+                        Recordarme en este equipo
+                    <label for="remember_me"><span></span>  </label>
+            </p>
+            <BR><BR>
+            <p class="submit"><input type="submit" value="Entrar"></p>
+        </form>
+    </div>
+
+    <BR><BR>
+    <div class="login-help raleway">
+    <p>Desarrollado por: <a > &nbsp Gómez León José Simón</a> <BR> <a >&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+        Soto Ríos David</a><BR> <a > &nbsp &nbsp &nbsp &nbspUTM 2017</a></p>
+    </div>
+</div>
+</body>
+</html>
