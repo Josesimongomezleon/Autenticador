@@ -8,5 +8,5 @@ class_name: AcceptanceTester
 modules:
     enabled:
         - PhpBrowser:
-            url: http://localhost/calidad/Codeception/hola/
+            url: http://localhost/calidad/Codeception/pages/
         - \Helper\Acceptance

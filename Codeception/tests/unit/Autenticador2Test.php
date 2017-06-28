@@ -107,7 +107,7 @@
         return $ban;
     }
 
-        function ModificarPass($conn,$idU,$nom,$contraU,$contra){
+    function ModificarPass($conn,$idU,$nom,$contraU,$contra){
         $ban= false;
         $Confirmar="select password from Usuarios where id=".$idU;
         $result = $conn->query($Confirmar);
@@ -209,6 +209,8 @@ class Autenticador2Test extends \Codeception\Test\Unit{
         $con =  conexion();
         $this -> assertEquals(true , ModificarPass($con,1,"escuela","1234","hola"));
     }
+
+    
 
 
 
